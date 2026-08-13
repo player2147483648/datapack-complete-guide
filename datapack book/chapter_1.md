@@ -19,7 +19,7 @@ The argument, or `Hello`, is a value that is passed in to the program; this argu
 Before learning anything new, we should start by writing your first command: `/say`, which writes text to the chat as if you're saying it. 
 
 Let's say you want to write the message "Hello World!" To do so, open the chat and type the following:
-```mcfunction
+```
 /say Hello World!
 ```
 
