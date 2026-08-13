@@ -16,7 +16,7 @@ The argument, or `Hello`, is a value that is passed in to the program; this argu
 
 ### Typing a command
 
-Before learning anything new, we should start by writing your first command: `/say`, which writes text to the chat as if you're saying it. 
+Before learning anything new, we should start by writing your first command: `say`, which writes text to the chat as if you're saying it. 
 
 Let's say you want to write the message "Hello World!" To do so, open the chat and type the following:
 ```
@@ -28,17 +28,25 @@ If done correctly, you should see following in chat:
 [your username] Hello World!
 ```
 
+> Note:
+>
+> When typing commands in chat, **always** use a forward slash (`/`)!
+>
+> The forward slash is only used for commands typed inside of chat, but goes unused when inside Datapacks and *Command Blocks*. I will refer commands by their names *without* the slash, and indicate commands typed in chat with a slash.
+
 Now that you've typed out your first command, it's necessary to know what you wrote down; and, in the future, learn how that applies to other commands.
 ### How commands are structured
 
 Every command has a set of rules called a syntax, that tells you how a command is to be formed. If it's formed incorrectly - even by one character - the command will fail and have to be corrected. This is why it's important to learn the *structure* of syntax, which is what this section is about.
 
-One rule is that **all** *Minecraft* commands start with a forward slash (`/`)
-
-The *syntax*, or the rules, for the `/say` command looks like this:
+The *syntax*, or the rules, for the `say` command looks like this:
 ```
 /say <message>
 ```
+> Note:
+>
+> The slash will, for consistency sake, also appear in syntax definitions.
+
 Command syntax can be separated into *terms*, which are individual rules of the syntax. To understand what these terms can represent, here are the rules for these term:
 - Terms written in plain text must be written exactly as shown;
 - Terms surrounded with angle brackets (`<>`) are *arguments*, with the text inside briefly explaining its purpose;
@@ -47,12 +55,12 @@ Command syntax can be separated into *terms*, which are individual rules of the 
 - Terms surrounded in parentheses with options separated with vertical lines (e.g. `(entry1|entry2|entry3)`) are required to run, but only one of the listed options can be picked;
   - If you replace the parentheses with square brackets  (e.g. `[entry1|entry2|entry3]`), the term becomes optional.
 
-In this example, there are 2 terms: `/say` and `<message>`. `/say` is plain text, so it goes unchanged. `<message>` is surrounded in angle brackets (`<>`), so it's an *argument*; you'll learn what *exactly* that means in a second, just let me explain myself.
+In this example, there are 2 terms: `say` and `<message>`. `say` is plain text, so it goes unchanged. `<message>` is surrounded in angle brackets (`<>`), so it's an *argument*; you'll learn what *exactly* that means in a second, just let me explain myself.
 
 ### Arguments and Flexibility in commands
 
 To more fully grasp what arguments are, Let's now compare the syntax to the command you wrote:
-```
+```mcfunction
 /say <message>
 /say Hello World!
 ```
