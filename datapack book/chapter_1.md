@@ -28,7 +28,7 @@ If done correctly, you should see following in chat:
 [your username] Hello World!
 ```
 
-> [!NOTE]
+> Note:
 >
 > When typing commands in chat, **always** use a forward slash (`/`)!
 >
@@ -43,7 +43,7 @@ The *syntax*, or the rules, for the `say` command looks like this:
 ```
 /say <message>
 ```
-> [!NOTE]
+> Note:
 >
 > The slash will, for consistency sake, also appear in syntax definitions.
 
@@ -64,7 +64,7 @@ To more fully grasp what arguments are, Let's now compare the syntax to the comm
 /say <message>
 /say Hello World!
 ```
-Here, we can make the observation that our message `Hello World!` **replaced** the `<message>` argument from the syntax. We also learned earlier that arguments are values *passed in* to a program or interpreter.
+Here, we can make the observation that our message `Hello World!` **replaced** the `<message>` argument from the syntax. You also learned earlier that arguments are values *passed in* to a program or interpreter.
 
 From here, it's easy to understand that an argument tells the command the *expected* value of information, where **the user is expected to give it**. In other words, `<message>` could be anything the user wants; `I love pizza!`, `1 + 1` and `abc123` are all valid values for this argument. However this doesn't apply to **all** arguments, as you'll learn right here.
 
@@ -77,7 +77,7 @@ Before moving on to the next chapter, let's look at the syntax of this **fake** 
 
 If you replaced `<number>` with say 5, and `<otherNumber>` with say 7.5 (e.g. `/add 5 7.5`), that would make sense - you're adding 2 real numbers; and the command would run as normal. But what if number **wasn't** an actual number, and instead 'pizza'? You can't add 7.5 to the word 'pizza' like with the number 5, so the command would fail and print an error. This is because the arguments here expect a numeric value, but got words or phrases instead. Thus, the *datatype* of these arguments, is a *number*.
 
-A datatype is the **type of value** that an argument expects to receive, like a number, word, item, block, etc. It's not always this clear what the specific requirements of an argument could be; for example the `<message>` argument: the word 'message' doesn't fully explain what you can type here. 
+A datatype is the **type of value** that an argument expects to receive, like a number, word, item, block, etc. It's not always this clear what the specific requirements of an argument could be; for example the `<message>` argument: the word 'message' doesn't fully explain what you can type here.
 
 Just to reassure you, every command you learn in this book will have its arguments' datatype and purpose explained to you.
 
