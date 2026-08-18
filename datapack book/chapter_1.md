@@ -28,7 +28,7 @@ If done correctly, you should see following in chat:
 [your username] Hello World!
 ```
 
-> Note:
+> [!NOTE]
 >
 > When typing commands in chat, **always** use a forward slash (`/`)!
 >
@@ -43,7 +43,7 @@ The *syntax*, or the rules, for the `say` command looks like this:
 ```
 /say <message>
 ```
-> Note:
+> [!NOTE]
 >
 > The slash will, for consistency sake, also appear in syntax definitions.
 
