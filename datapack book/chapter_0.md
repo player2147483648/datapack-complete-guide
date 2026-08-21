@@ -30,11 +30,11 @@ There is also a correlation to the cardinal directions (north, south, east and w
 - Moving in the +X direction means that you're moving **east**,
 - Moving in the -X direction means that you're moving **west**,
 - Moving in the +Y direction means that you're moving **upwards**,
-- Moving in the +Y direction means that you're moving **downwards**,
+- Moving in the -Y direction means that you're moving **downwards**,
 - Moving in the +Z direction means that you're moving **south**,
 - Moving in the -Z direction means that you're moving **north**.
 
-For you you can understand better (I cannot stress how important it is, especially for commands!), let's say you are at the coordinates `550, 90, 275` and you're base is at `200, 90, 525`. If you want to get to your base, you first move 350 blocks *west* (or in the -X direction), then move 250 blocks *south* (or in the +Z direction). If you understand that, then you're good to go.
+For you can understand better (I cannot stress how important it is, especially for commands!), let's say you are at the coordinates `550, 90, 275` and your base is at `200, 90, 525`. If you want to get to your base, you first move 350 blocks *west* (or in the -X direction), then move 250 blocks *south* (or in the +Z direction). If you understand that, then you're good to go.
 
 #### Chunks
 
@@ -50,7 +50,7 @@ The F3 menu (or debug menu) is accessible by pressing F3, and gives access to a 
 
 Don't worry about most of this text, as it's not important; there are a couple of things that are useful:
 
-1. The text at the very top right corner, is your FPS, or frames per second. This is how often your computer can refresh the screen.
+1. The text at the very top right corner is your FPS, or frames per second. This is how many times your computer refreshes the screen every second.
 
 2. Where it says "Integrated server @ 14.2/50ms" displays your world's TPS, or ticks per second. The "14.2" tells you how fast Minecraft was able to perform all of the necessary actions to advance to the next game tick. The tick system will be explained in this chapter.
 
@@ -82,14 +82,14 @@ Here are some useful keybinds, with visuals to understand what they do:
 
 - Pressing F3 + H toggles advanced tooltips, which shows extra information when you hover over items, like the item's ID, durability, etc. Here's what it looks like with a damaged sword: 
 
-![figure5](./images/chapter_0//figure5.png)
+![figure5](./images/chapter_0/figure5.png)
 <!-- This figure might need improvement lol -->
 
 - Holding F3 + F4 brings up the gamemode switcher, which allows you to quickly change gamemodes. The menu looks like this: 
 
 ![figure6](./images/chapter_0/figure6.png)
 
-  The selected gamemode is highlighted in **yellow**. When you press F3 + F4, Let go of F4 to prevent choosing constantly. To choose a different gamemode, press F4 to go to the right. Once you've chosen a gamemode, release F3.
+  The selected gamemode is highlighted in **yellow**. When you press F3 + F4, let go of F4 to prevent choosing constantly. To choose a different gamemode, press F4 to go to the right. Once you've chosen a gamemode, release F3.
   > [!TIP]
   >
   > If you press F3 + F4 but quickly let go of *both*, it switches you to the last gamemode you were in.
@@ -105,7 +105,7 @@ Here are some useful keybinds, with visuals to understand what they do:
 
 Don't worry if you don't understand this, it's not important until you go further in the book. 
 
-All of the logic on a Minecraft world is done on a **server**, including on singleplayer and LAN worlds, where your computer acts like the server host that you connect to. However, each induvidual *client* (or player) handles rendering their view of the game, and other updates and events that they might send or receive to and from the server. 
+All of the logic on a Minecraft world is done on a **server**, including on singleplayer and LAN worlds, where your computer acts like the server host that you connect to. However, each individual *client* (or player) handles rendering their view of the game, and other updates and events that they might send or receive to and from the server. 
 
 For example, if someone places a block, that event is sent to the server for validation, and if it succeeds, the server will update the world, so that everyone can see that block; that event is what's called **server-sided**. But, if you were to enable something like resource pack, only you are affected by it; that event is **client-sided**.
 
@@ -113,7 +113,7 @@ For example, if someone places a block, that event is sent to the server for val
 
 ### The Tick System
 
-Minecraft normally runs at 20 TPS (ticks per second), where one tick is completed within 0.05 seconds, or 50 milliseconds. In other words, all logic inside of Minecraft, from chunk generation, to player inputs, to mob AI, update once every 50 milliseconds; that's it! 
+Minecraft normally runs at 20 TPS (ticks per second), where one tick is completed within 0.05 seconds, or 50 milliseconds. In other words, all logic inside of Minecraft from chunk generation, to player inputs, to mob AI update once every 50 milliseconds; that's it! 
 
 ---
 
