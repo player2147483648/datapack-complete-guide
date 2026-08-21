@@ -39,7 +39,7 @@ This removes a **lot** of the burden of memorizing most argument fields. There a
 
 ### Blocks and the `setblock` command
 
-The `setblock` command allows you to place a block at a specific position. Blocks that normally have to be supported undeneath (e.g. flowers) can be placed mid-air or in otherwise 'illegal' positions. Here is its syntax:
+The `setblock` command allows you to place a block at a specific position. Blocks that normally have to be supported underneath (e.g. flowers) can be placed mid-air or in otherwise 'illegal' positions. Here is its syntax:
 ```
 /setblock <pos> <block> [destroy|keep|replace|strict]
 ```
@@ -47,11 +47,11 @@ Let's go over the arguments:
 - `<pos>` expects coordinates, which is where the block will be placed. This position **must be loaded** (see [Chapter 0](chapter_0.md)); 
 - `<block>` expects a block ID (e.g. `minecraft:crafting_table`), where other data can be specified, such as blockstates (don't worry about blockstates now). You can use auto-complete here.
 
-The argument in brackets (`[]`) indicate that there are 4 valid options, but you can only pick one; the field is still optional however. Here are what those options do:
+The argument in brackets (`[]`) indicates that there are 4 valid options, but you can only pick one; the field is still optional however. Here are what those options do:
 
 - `destroy` works like normal, if it replaces a block, the destroyed block will drop as if it were broken by a diamond pickaxe. (e.g. a Grass Block will drop Dirt, Stone will drop Cobblestone, and unbreakable blocks drop nothing);
 
-- `keep` only works if **doesn't** replace a block, it fails otherwise;
+- `keep` only works if it **doesn't** replace a block, it fails otherwise;
 
 - `replace` is the default if the field is left empty; and
 
