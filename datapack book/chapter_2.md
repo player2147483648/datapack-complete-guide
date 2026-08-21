@@ -25,6 +25,8 @@ Now let's explain what each *argument* does:
 
 We can separate the next section into 3 parts: *Target Selectors*, *Coordinates* and *Rotation*. Each of these is an important *datatype*, but the latter isn't as important right now.
 
+---
+
 ### Target Selectors
 >[!NOTE]
 >
@@ -44,9 +46,11 @@ But that isn't all. You can also specify additional arguments to filter entities
 
 We'll go more into target selector arguments in the next chapters.
 
+---
+
 ### Coordinates
 
-A coordinate describes a position inside of a Minecraft world. The coordinate datatype can describe both an absolute position (i.e a specific point in the world) *as well as* a position **relative** to where the command is being run. When typing commands in chat, the command is run at your position.
+If you don't know what coodinates are, see [Chapter 0](./chapter_0.md). The coordinate datatype can describe both an absolute position (i.e a specific point in the world) *as well as* a position **relative** to where the command is being run. When typing commands in chat, the command is run at your position.
 
 >[!TIP]
 >
@@ -66,6 +70,8 @@ You can also mix absolute and relative coordinates (e.g. `10 ~ -20`; where X and
 
 There is third type of coordinates that's *not compatible* with absolute or relative coordinates, but that won't be learned until the later parts.
 
+---
+
 ### Rotation
 
 A rotation specifies what direction an entity is looking, and is what the `[<rotation>]` argument refers to, and is comprised of 2 numbers: the *yaw* (horizontal rotation) and *pitch* (vertical rotation) respectively, these numbers specify **degrees** instead of radians.
@@ -80,6 +86,8 @@ The pitch can be a value between -90° (completely upwards) and +90° (completel
 
 Likewise with coordinates, you can use relative rotations (e.g. `~ ~` is your rotation, `~ ~-10` makes you look upward by 10 degrees)
 
+---
+
 ### Usage Within Commands
 
 Now, back to the `tp` command. Here are some examples for you to try, with their corresponding action if you were to run them in the chat:
@@ -90,10 +98,7 @@ Now, back to the `tp` command. Here are some examples for you to try, with their
 - `/tp @s 230.23 20 168.95 90 0` - teleports you to an arbitrary position while making you look west, without looking up nor down (i.e completely forwards);
 - `/tp @e[type=minecraft:cow] ~ ~5 ~` - teleports all cows 5 blocks above you. This examples serves as your first look into the `type` selector argument.
 
-> [!TIP]
->
-> If you don't know how to read coordinates and rotation, see (insert chapter 0 here)[]
-<!-- Chapter 0 is an optional chapter explaining important mechanics of Minecraft relating to commands, such as the F3/debug menu. -->
+---
 
 ### Summary
 
