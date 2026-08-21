@@ -101,6 +101,16 @@ Here are some useful keybinds, with visuals to understand what they do:
 
 ---
 
+### Loaded Areas
+
+When people say that an area is "loaded", that means that Minecraft has designated a specific area of *chunks* to accept updates, such as block placement, entity movments, etc. Areas can be loaded by players, thrown ender pearls, and commands.
+
+> [!NOTE]
+>
+> Loaded areas are more complex than this; but this book won't go over it, since it's not necessary to learn here.
+
+---
+
 ### Server vs Client
 
 Don't worry if you don't understand this, it's not important until you go further in the book. 
